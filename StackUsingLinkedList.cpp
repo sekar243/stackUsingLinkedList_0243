@@ -35,4 +35,14 @@ public:
         return value;
     }
 
+    void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stack is Empity" << endl;
+        }
+
+        cout << "Popped Value: " << top->data << endl;
+        top = top->next;
+    }
 };
